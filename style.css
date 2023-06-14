@@ -247,19 +247,19 @@ span {
 
 
 
-.first-card:hover {
+.first-card:hover, .first-card:active {
     background: url('./assets/pexels-lisa-fotios-1369476.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.second-card:hover {
+.second-card:hover, .second-card:active  {
     background: url('./assets/pexels-christina-morillo-1181244.jpg');
     background-position: center;
     background-size: cover;
 }
 
-.third-card:hover {
+.third-card:hover .third-card:active  {
     background: url('./assets/pexels-pixabay-265087.jpg');
     background-position: center;
     background-size: cover;
