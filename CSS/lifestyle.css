@@ -1,4 +1,5 @@
 
+
 .grid-main-container {
   
   display: flex;
@@ -17,6 +18,9 @@
     padding: 1rem;
 }
 
+.mid-content img{
+    max-width: 100%;
+}
 .mid-content h1{
     text-transform: capitalize;
     margin-bottom: .2;
@@ -41,3 +45,38 @@
     color: #131311;
 }
 
+
+
+
+@media screen and (max-width: 550px) {
+body
+
+
+    .grid-main-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            'navbar navbar'
+            'left-side-article left-side-article'
+            'right-side-article right-side-article'
+            'middle-article middle-article'
+            'template-cards template-cards'
+        ;
+    }
+
+    .right-side-article {
+        margin-top: 0;
+    }
+
+    /* .left-side-article #article h1 {
+    font-size: clamp(38px, 2vw, 90px);
+} */
+
+    .mid-content {
+        width: 100%;
+    
+
+
+
+}
+}
