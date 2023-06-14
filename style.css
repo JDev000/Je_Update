@@ -1,134 +1,333 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid-Blog-Site</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-<body>
-    <div class="grid-main-container">
-        <div class="navbar">
-            <h1>Je _ Update</h1>
-            <ul>
-                <li><a id="active-btn" href="index.html">Programming</a></li>
-                <li><a href="lifestyle.html">Lifestyle</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Hobbies</a></li>
-            </ul>
-        </div>
+body {
+    color: whitesmoke;
+    background: rgb(213, 213, 213);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
 
-        <div class="left-side-article">
-            <div id="article">
-                <h1>How <span>Jerome Edica</span> became a Developer at his young age</h1>
-                <h2>Dated Posted: May. 28, 2023</h2>
-                <img src="./assets/prog-img.jpeg" alt="">
-                <p>I am <i>"Jerome Edica"</i>, and even as a
-                    child, I was already fond of computers. I started using a computer when <em>I was 7 years old</em>.
-                    Because I
-                    was mischievous in handling it, I ended up breaking my cousin's computer. Despite the things I
-                    broke, I still managed to learn how to use it. Gaming was my passion when I was young, but I
-                    continued to explore what else I could do with a computer. I even learned how to use Facebook at a
-                    young age because I was curious about how technology works. As time went on, I learned more and was
-                    able to do more. I also learned how to hack simple things like Wi-Fi when I was in elementary school
-                    and how to find bugs in applications. I just recently discovered that it's called 'bug bounty,' and
-                    I realized that there's a significant amount of money that can be earned from it. But it's okay
-                    because at least I learned.
 
-                    But how did I become a website developer or what they call a 'Front End Developer'? It started when
-                    I was in Grade 9. I stopped studying in 2020, not only because of the pandemic caused by COVID-19,
-                    but also because I couldn't afford to study in a private school. However, when I stopped, it didn't
-                    occur to me to just rest all the time and watch or play games.
+h2 {
+    font-size: .8rem;
+    opacity: .7;
+    margin-bottom: .7rem;
+}
 
-                    I thought about what I could do or what I wanted to learn to make good use of my time. I started
-                    studying Ethical Hacking. I learned how to hack someone's basic identity, but of course, I was the
-                    person I hacked. It was better to test it on myself for my own learning and not harm others. I also
-                    learned how to create 3D models, basic animation, basic graphics, and other things because I also
-                    enjoy designing houses and various things.
+.grid-main-container {
+    height: auto;
+    width: min(100%, 45rem);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        'navbar navbar navbar navbar'
+        'left-side-article left-side-article right-side-article right-side-article'
+        'middle-article middle-article middle-article middle-article'
+        'template-cards template-cards template-cards template-cards'
+    ;
+}
 
-                    I stumbled upon website development when I became interested and serious about studying
-                    cybersecurity. But of course, I'm not yet that skilled, and I'm still learning, so I'm still
-                    curious. According to an article I read, learning website development is necessary, and there's a
-                    point to it because if you know how to create a website, there's also a chance to learn how to
-                    bypass one. And it's really important to learn Cybersecurity, at least the basics, so that we know
-                    how to create a safe website.
 
-                    I also proved that age doesn't matter when it comes to learning if you really want to learn. I
-                    learned a lot on my journey, but I feel like I want to have companions or see people like me in this
-                    field. That's why I thought of joining communities to grow alongside them and help each other
-                    improve. That's where I met @Atcha_Abe, who became my elder sister in the community. Because of her,
-                    I met many people, not just ordinary individuals, but big names in the IT field, and many skilled
-                    individuals. This motivated me even more to work on projects to improve myself as well.</p>
-            </div>
-        </div>
-        <div class="right-side-article">
-            <div id="article">
-                <h1>Life of a <span>Freelancer</span></h1>
-                <h2>Dated Posted: May. 28, 2023</h2>
-                <img src="./assets/article-img.png" alt="">
-                <p id="big-artic"> Ang <i>"Freelancing"</i> ay isang uri ng trabaho na pwede pagkakitaan ng kahit sino
-                    sa pamamagitan
-                    ng pagbenta ng iyong skills. Ang halimbawa nito ay ang ginagawa ko kung saan may skills ako sa
-                    pag-gawa ng website,pagdesign
-                    ,pagsulat at kung ano ano pa na pwede ko pagkakitaan pag may nagpagawa sa akin.
-                    Bilang isang Freelancer masasabi ko na hindi madali itong trabaho dahil una ay mahirap makakuha ng
-                    client. Hindi ka basta-basta makakakuha ng client lalo't kung hindi maayos ang profile mo dahil isa
-                    din yun na titignan at yung mga project mo na ginawa. Patunay na marunong o kaya mong gawin ang
-                    kanyang pinapagawa kapag may napatunayan kana o na experience ito. Makakatulong ang pag-gawa ng
-                    portfolio website upang maipakita sa ibang tao ang iyong magawa nagawa na project, upang patunay na
-                    kaya mi gumawa ng mga ganung bagay at pwede ka nila i hire para sa kanilang project na gagawin. Ang
-                    maganda sa Freelancing ay hawak mo ang oras mo at wala kang susundin na pinuno, dahil ikaw mismo ang
-                    magdidikta ng iyong gagawin. Pero nakabase parin dapat ang project mo na gagawin sa pinapagawa ng
-                    client mo para mabayaran ka niya ng maayos at posible ka bang bigyan ng magandang comment at rate
-                    dahil sa katangian na pinapakita mo. laptop o cellphone at stable na internet connection ang
-                    gagamitin natin, at dapat marunong tayo makipag-usap ng maayos sa client upang magtiwala sila sayo
-                    at baka susunod ay bumalik sila sayo upang magpagawa muli. </p>
-            </div>
-        </div>
 
-        <div class="middle-article">
-            <h1>The Project <span>AI</span></h1>
-            <h2>Dated Posted: May. 28, 2023</h2>
-            <img src="./assets/chat_AI.png" alt="">
-            <p><em>Disover</em> the power of 'AI', Year 2023 kung saan naririnig ko at nakikita ang mabagskik na
-                katangian ni chatGPT.
-                Nag trending ito sa Tiktok,Facebook at sa ibang social media platform, nung una ay natawa ako kasi yung
-                AI ay nakakausap nila through chat
-                at sa mga usapan nila na nakakatawa na parang tao lang kausap. Tinry ko ito pag-aralan at nalaman ko din
-                na OpenAI pala ang pangalan
-                ng company na kung saan ginawa ang chatGPT, nakakamangha talaga sa kayang gawin nito. Hanggang sa
-                naisipan ko na gumawa din ng sarili kong version ng chatGPT at i test kung paano nga ba talaga ito
-                gumagana.
-                Gamit ang API "Application Programming Interface" ng openAI ako ay nakagawa ng kagaya nito at natawa
-                lang din ako sa part na marunong ito magmura. Syempre hindi ko kaya gumawa ng eksatong galing ng
-                chatGPT. Matagal ito na train at napag-aralan ng mga Developer upang mapagana ng maayos</p>
-        </div>
-        <div class="template-cards">
-            <div class="first-card">
-                <h1>01 </h1>
-                <p id="display-txt-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis
-                    distinctio voluptatem officia, autem in! Vel et impedit excepturi culpa commodi distinctio quas
-                    recusandae, dolores enim doloribus. Error, aliquam odit?</p>
-            </div>
-            <div class="second-card">
-                <h1>02</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis distinctio voluptatem
-                    officia, autem in! Vel et impedit excepturi culpa commodi distinctio quas recusandae, dolores enim
-                    doloribus. Error, aliquam odit?</p>
-            </div>
-            <div class="third-card">
-                <h1>03</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat blanditiis distinctio voluptatem
-                    officia, autem in! Vel et impedit excepturi culpa commodi distinctio quas recusandae, dolores enim
-                    doloribus. Error, aliquam odit?</p>
-            </div>
-        </div>
-    </div>
-    </div>
-    <script src="main.js"></script>
-</body>
+.grid-main-container .navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: min(100%, 45rem);
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(159, 114, 241), rgb(246, 68, 148));
+    margin-inline: auto;
+    z-index: 999;
+}
 
-</html>
+.navbar h1 {
+    color: white;
+    font-family: 'Rubik Puddles', cursive;
+    text-shadow: 0 0 10px rgb(246, 68, 148);
+    animation-name: logo-anim;
+    animation-duration: 3s;
+    animation-timing-function: none;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    margin: 1rem 0;
+}
+
+.navbar ul {
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    width: auto;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 0.3rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    background: rgb(246, 68, 148);
+    text-decoration: none;
+    font-size: .9rem;
+    border-radius: 0.3rem;
+    transition: all ease-in-out .3s;
+    padding: .3rem .8rem;
+}
+
+#active-btn {
+    outline: 1px solid rgb(246, 68, 148);
+    color: #393838;
+    background: none;
+}
+
+.navbar ul li a:hover {
+    box-shadow: 0 0 10px rgb(246, 68, 148);
+}
+
+
+
+.left-side-article {
+    grid-area: left-side-article;
+    background: #fff;
+    color: #393838;
+    margin-top: 8rem;
+    padding: .6rem 0;
+}
+
+.left-side-article #article {
+    padding: 0 0.3rem 0 1rem;
+}
+
+.left-side-article #article h1 {
+    font-size: clamp(28px, 2vw, 90px);
+}
+
+span {
+    color: rgb(246, 68, 148);
+    font-size: clamp(28px, 2.5vw, 120px);
+    font-weight: bolder;
+}
+
+.left-side-article #article img {
+    width: 100%;
+    margin-bottom: .7rem;
+}
+
+
+
+.right-side-article {
+    grid-area: right-side-article;
+    background: #fff;
+    color: #393838;
+    margin-top: 8rem;
+    padding: .6rem 0;
+    text-align: justify;
+}
+
+.right-side-article #article {
+    padding: 0 1rem 0 .3rem;
+}
+
+.right-side-article #article h1 {
+    font-size: clamp(28px, 2.3vw, 100px);
+}
+
+#big-artic {
+    font-size: 1.4rem;
+}
+
+span {
+    color: rgb(246, 68, 148);
+}
+
+.right-side-article #article img {
+    width: 100%;
+    margin-bottom: .7rem;
+}
+
+
+.middle-article {
+    height: auto;
+    width: 100%;
+    grid-area: middle-article;
+    padding: 1rem;
+    background: #131313;
+}
+
+.middle-article h1 {
+    font-size: clamp(28px, 2.3vw, 100px);
+}
+
+.middle-article img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
+.template-cards {
+    height: auto;
+    grid-area: template-cards;
+    background: #e5eae7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow-x: hidden;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+
+.template-cards .first-card {
+    background: #313030;
+    padding: 5rem;
+    transition: all .4s ease-in-out;
+}
+
+.first-card h1 {
+    text-decoration: overline;
+    margin-bottom: .3rem;
+    font-size: 3rem;
+}
+
+.first-card p {
+    /* color: #313030; */
+}
+
+
+.template-cards .second-card {
+    background: #313030;
+    padding: 5rem;
+    transition: all .4s ease-in-out;
+}
+
+.second-card h1 {
+    text-decoration: overline;
+    margin-bottom: .3rem;
+    font-size: 3rem;
+}
+
+.second-card p {
+    /* color: #313030; */
+}
+
+
+.template-cards .third-card {
+    background: #313030;
+    padding: 5rem;
+    transition: all .4s ease-in-out;
+}
+
+.third-card h1 {
+    text-decoration: overline;
+    margin-bottom: .3rem;
+    font-size: 3rem;
+}
+
+.third-card p {
+    /* color: #313030; */
+}
+
+
+
+
+.first-card:hover {
+    background: url('./assets/pexels-lisa-fotios-1369476.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.second-card:hover {
+    background: url('./assets/pexels-christina-morillo-1181244.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.third-card:hover {
+    background: url('./assets/pexels-pixabay-265087.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+    .grid-main-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            'navbar navbar'
+            'left-side-article left-side-article'
+            'right-side-article right-side-article'
+            'middle-article middle-article'
+            'template-cards template-cards'
+        ;
+    }
+
+    .right-side-article {
+        margin-top: 0;
+    }
+
+    /* .left-side-article #article h1 {
+    font-size: clamp(38px, 2vw, 90px);
+} */
+
+    .template-cards .first-card {
+        width: 100%;
+    }
+
+
+    .template-cards .second-card {
+        width: 100%;
+    }
+
+    .template-cards .third-card {
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+/* ANIMATION SECTION */
+
+@keyframes logo-anim {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(5%);
+    }
+
+    50% {
+        transform: translateY(-5%);
+    }
+
+    75% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
