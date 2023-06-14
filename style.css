@@ -14,16 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-body::before {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    content: 'JJJJJJJJ';
-    color: rgb(21, 21, 21);
-    font-size: 30rem;
-    transform: rotate(35deg);
-    z-index: -999;
-}
 
 
 h2 {
